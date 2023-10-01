@@ -25,12 +25,13 @@ module.exports.create = async function (req, res) {
             memory: req.body.memory,
             time: req.body.time,
         });
+        console.log(newComment);
 
         // Save the new comment to the database
         await newComment.save();
         
         // Send a success message as a response
-        res.send("New comment added successfully.");
+        res.send(`New comment added successfully.${newComment}`);
     } catch (err) {
         // Handle any errors and send a 500 Internal Server Error response if an error occurs
         console.error("Error:", err);
