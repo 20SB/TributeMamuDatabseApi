@@ -1,6 +1,6 @@
 <h1 align="center">Ecommerce API</h1> 
 <p align="center">
- 🖊️ This is an API for an eCommerce platform to manage product inventory. <br>
+ 🖊️ This is an API for an eCommerce platform to manage comment inventory. <br>
      This App built using <a href="https://ejs.co/">EJS</a>, <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://expressjs.com/">ExpressJs</a> and <a href="https://nodejs.org/en/">NodeJs</a>
 </p>
 
@@ -19,25 +19,25 @@
 
 <ul>
   <li>You can perform CRUD operations on this API</li>
-  <li>C- Create or add Product</li>
+  <li>C- Create or add Comment</li>
   <ul>
-      <li>API to add products to the database</li>
-      <li>URL [POST]: /products/create</li>
+      <li>API to add comments to the database</li>
+      <li>URL [POST]: /comments/create</li>
    </ul>
-  <li>R- Read Products</li>
+  <li>R- Read Comments</li>
    <ul>
-      <li>API to list products</li>
-      <li>URL [GET] : /products</li>
+      <li>API to list comments</li>
+      <li>URL [GET] : /comments</li>
   </ul>
-   <li>U- Update quantity of any specific product</li>
+   <li>U- Update quantity of any specific comment</li>
   <ul>
-      <li>API to delete products</li>
-      <li>URL [DELETE] : /products/:id</li>
+      <li>API to delete comments</li>
+      <li>URL [DELETE] : /comments/:id</li>
    </ul>
-            <li>D- Delete any specific product</li>
+            <li>D- Delete any specific comment</li>
    <ul>
-       <li>API to update the quantity of a product (can be incremented or decremented)</li>
-       <li>URL [POST] : /products/:id/update_quantity?number=10</li>
+       <li>API to update the quantity of a comment (can be incremented or decremented)</li>
+       <li>URL [POST] : /comments/:id/update_quantity?number=10</li>
    </ul>
 </ul>
 
@@ -48,12 +48,12 @@
         -   mongoose.js
     -   controller
         -   home_controller.js
-        -   product_controller.js
+        -   comment_controller.js
     -   models
-        -   product.js
+        -   comment.js
     -   routes
         -   index.js
-        -   product.js
+        -   comment.js
     -   views
         -   home.ejs
     -   index.js
@@ -65,8 +65,8 @@
 -   Home Page
     ![Home Page](./page-screenshots/home.png)<br /><br />
 
--   Products
-    ![Products](./page-screenshots/products.png)<br /><br />
+-   Comments
+    ![Comments](./page-screenshots/comments.png)<br /><br />
 
 ## Built with
 
@@ -95,17 +95,17 @@ Run `npm start`, open localhost:5000 in browser to run the program
 
 You can use an API testing tool like Postman to interact with the eCommerce API.
 
--   Create a product:
+-   Create a comment:
 
-    -   Endpoint: POST /products/create
+    -   Endpoint: POST /comments/create
 
--   Get products:
+-   Get comments:
 
-    -   Endpoint: GET /products
+    -   Endpoint: GET /comments
 
--   Delete a product:
+-   Delete a comment:
 
-    -   Endpoint: DELETE /products/:id
+    -   Endpoint: DELETE /comments/:id
 
--   Update a product:
-    -   Endpoint: POST /products/:id/update_quantity/?number=10
+-   Update a comment:
+    -   Endpoint: POST /comments/:id/update_quantity/?number=10

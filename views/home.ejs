@@ -22,34 +22,30 @@
     <br />
     <div class="container" style="width: auto; line-height: 1.5;">
         <ul>
-            <li>This is an API for an eCommerce platform to manage product inventory.</li>
+            <li>This is an API for an eCommerce platform to manage comment inventory.</li>
             <li>You can test it using POSTMAN</li>
             <li>You can perform CRUD operations on this API</li>
-            <li>C- Create or add Product</li>
+            <li>C- Create or add Comment</li>
             <ul>
-                <li>API to add products to the database</li>
-                <li>URL [POST]: /products/create</li>
+                <li>API to add comments to the database</li>
+                <li>URL [POST]: /comments/create</li>
             </ul>
-            <li>R- Read Products</li>
+            <li>R- Read Comments</li>
             <ul>
-                <li>API to list products</li>
-                <li>URL [GET] : /products</li>
+                <li>API to list comments</li>
+                <li>URL [GET] : /comments</li>
             </ul>
-            <li>U- Update quantity of any specific product</li>
+            <li>D- Delete any specific comment</li>
             <ul>
-                <li>API to delete products</li>
-                <li>URL [DELETE] : /products/:id</li>
+                <li>API to delete comments</li>
+                <li>URL [DELETE] : /comments/:id</li>
             </ul>
-            <li>D- Delete any specific product</li>
-            <ul>
-                <li>API to update the quantity of a product (can be incremented or decremented)</li>
-                <li>URL [POST] : /products/:id/update_quantity?number=10</li>
-            </ul>
+            <li>CORS added</li>
         </ul>
     </div>
     <br>
     <br>
-    <!-- Link to view products -->
-    <a href="/products"><button>View Products</button></a>
+    <!-- Link to view comments -->
+    <a href="/comments"><button>View Comments</button></a>
 </body>
 </html>

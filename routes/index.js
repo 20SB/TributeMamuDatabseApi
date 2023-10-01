@@ -8,7 +8,7 @@ const homeController = require('../controller/home_controller');
 router.get('/', homeController.home);
 
 // Use the users router for handling user-related routes
-router.use('/products', require('./product'));
+router.use('/comments', require('./comment'));
 
 
 // Export the main router to be used in your application
