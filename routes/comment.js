@@ -10,8 +10,8 @@ router.get('/', commentsController.comments);
 // Route for creating a comment
 router.post('/create', commentsController.create);
 
-// Route for deleting the comment
-router.delete('/:commentId', commentsController.delete);
+// // Route for deleting the comment
+// router.delete('/:commentId', commentsController.delete);
 
 // Export the main router to be used in your application
 module.exports = router;
